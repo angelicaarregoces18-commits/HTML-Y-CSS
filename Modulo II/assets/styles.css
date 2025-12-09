@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Header arriba, contenido medio, footer abajo */
+}
+
+.site-header {
+  border-bottom: 2px solid black; /* Línea que separa header del contenido */
+  padding: 20px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between; /* "Mi Blog" izquierda, navegación derecha */
+  align-items: center; /* Centra verticalmente */
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+}
+
+.site-header nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 2px solid black; /* Botones con borde negro */
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.site-header nav a:hover {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+}
+
+/* CONTENIDO PRINCIPAL - CON FLEX PARA ARTÍCULO Y SIDEBAR AL LADO */
+#content {
+  flex: 1; /* Expande para llenar espacio disponible */
+  display: flex; /* Esto pone artículo y sidebar en la misma línea */
+  gap: 40px; /* Espacio entre artículo y sidebar */
+  padding: 40px 0;
+  align-items: flex-start; /* Alinea al tope */
+}
+
+/* ARTÍCULO - OCUPA MÁS ESPACIO (2/3) */
+.post {
+  flex: 2; /* Ocupa 2 partes del espacio disponible */
+  border: 2px solid black; /* Borde negro alrededor */
+  padding: 30px;
+  background-color: white;
+}
+
+/* Título centrado */
+#post-title { 
+  text-align: center; /* Centra el texto */
+  font-size: 28px;
+  border-bottom: 1px solid black; /* Línea bajo el título */
+  padding-bottom: 10px;
+}
+
+/* SIDEBAR - BARRA LATERAL A LA DERECHA (1/3) */
+.sidebar {
+  flex: 1; /* Ocupa 1 parte del espacio disponible */
+  display: flex;
+  flex-direction: column; /* Cuadritos uno debajo del otro */
+  gap: 20px; /* Espacio entre cuadritos */
+}
+
+/* Estilo de cada cuadrito */
+.card {
+  border: 2px solid black; /* Borde negro */
+  padding: 20px;
+  background-color: white;
+}
+
+/* Enlaces dentro de los cuadritos */
+.card a {
+  color: #333;
+  text-decoration: none;
+  display: block; /* Cada enlace en línea propia */
+}
+
+/* Línea para separar inferior */
+.site-footer {
+  border-top: 2px solid black; /* Línea negra que separa */
+  padding: 20px 0;
+  text-align: center; /* Texto centrado */
+}
+
+/* Enlaces del footer */
+.site-footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Clase para ocultar elementos (accesibilidad) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* RESPONSIVE - Para pantallas pequeñas */
+@media (max-width: 768px) {
+  #content {
+    flex-direction: column; /* En móviles: artículo arriba, sidebar abajo */
+  }
+}
