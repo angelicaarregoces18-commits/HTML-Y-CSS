@@ -109,10 +109,3 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
 }
-
-/* RESPONSIVE - Para pantallas pequeñas */
-@media (max-width: 768px) {
-  #content {
-    flex-direction: column; /* En móviles: artículo arriba, sidebar abajo */
-  }
-}
