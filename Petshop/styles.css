@@ -1,0 +1,147 @@
+body {
+  background-image: url(https://i.pinimg.com/1200x/40/2d/92/402d92b2d445b23236a8c713cffa8f9b.jpg); /* Fondo con patitas */
+  font-family: sans-serif; /* Fuente simple sin adornos */
+  margin: 0; /* Sin márgenes externos */
+  padding: 0; /* Sin relleno interno */
+}
+
+/* Barra superior con el nombre de la tienda */
+header {
+  background-color: #000000; /* Fondo negro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espacio interno */
+}
+
+/* Título principal */
+header h1 {
+  margin: 0; /* Sin margen superior/inferior */
+  font-size: 36px; /* Tamaño grande */
+}
+
+/* Contenedor para centrar el logo */
+.logo {
+  text-align: center; /* Centra su contenido */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* Estilo específico para la imagen del logo */
+.logo + img {
+  display: block; /* Convierte en elemento de bloque */
+  margin: 0 auto; /* Centra horizontalmente */
+  border: 3px solid #333; /* Borde gris oscuro */
+  border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Título de la sección de cachorros */
+h2#inicio {
+  text-align: center; /* Centrado */
+  color: #333; /* Color gris oscuro */
+  font-size: 28px; /* Tamaño grande */
+  margin: 30px 0; /* Espacio arriba y abajo */
+}
+
+/* Todas las imágenes dentro de secciones */
+section img {
+  display: block; /* Cada imagen en línea propia */
+  margin: 0 auto 15px auto; /* Centrada con espacio abajo */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 2px solid #ddd; /* Borde gris claro */
+}
+
+/* Información de cada perro (raza, color, etc.) */
+figcaption h3 {
+  margin: 8px 0; /* Espacio entre líneas */
+  font-size: 16px; /* Tamaño estándar */
+  color: #333; /* Color gris oscuro */
+}
+
+/* Títulos de características físicas */
+h1 {
+  color: #ffe54f; /* Amarillo brillante */
+  font-size: 24px; /* Tamaño mediano */
+  margin: 30px 0 15px 0; /* Espacio: arriba, laterales, abajo */
+  padding-left: 10px; /* Pequeño espacio izquierdo */
+}
+
+/* Párrafos descriptivos */
+p {
+  background-color: white; /* Fondo blanco para legibilidad */
+  padding: 15px; /* Espacio interno */
+  margin: 10px 20px; /* Espacio externo */
+  border-radius: 5px; /* Esquinas redondeadas */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Pie de página */
+footer {
+  background-color: #333; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  padding: 20px; /* Espacio interno */
+  margin-top: 30px; /* Separación del contenido */
+  text-align: center; /* Todo centrado */
+}
+
+/* Título dentro del footer */
+footer h2 {
+  margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+/* Enlaces del footer */
+footer a {
+  display: block; /* Cada enlace en línea separada */
+  color: #ffe54f; /* Color amarillo */
+  margin: 10px 0; /* Espacio entre enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Efecto al pasar el mouse sobre enlaces */
+footer a:hover {
+  text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+/* Créditos del desarrollador */
+footer h1 {
+  color: white; /* Texto blanco */
+  margin-top: 20px; /* Separación de los enlaces */
+  font-size: 18px; /* Tamaño más pequeño */
+  border-left: none; /* Sin borde lateral */
+  padding: 10px; /* Espacio interno */
+}
+
+/* CONTENEDOR QUE AGRUPA LOS 3 PERROS - LO MÁS IMPORTANTE */
+.perros-container {
+  display: flex; /* Activa Flexbox para alinear horizontalmente */
+  justify-content: center; /* Centra los elementos */
+  gap: 20px; /* Espacio entre cada perro */
+  flex-wrap: wrap; /* Si no caben, pasan a siguiente línea */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* Cada tarjeta individual de perro */
+.perros-container section {
+  width: 300px; /* Ancho fijo para todas */
+  background-color: white; /* Fondo blanco */
+  padding: 15px; /* Espacio interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+  text-align: center; /* Texto centrado */
+}
+
+/* Imágenes dentro de las tarjetas de perros */
+.perros-container section img {
+  width: 250px; /* Ancho fijo */
+  height: 250px; /* Alto fijo */
+  object-fit: cover; /* Recorta imagen para ajustarse */
+  border-radius: 8px; /* Bordes redondeados */
+  display: block; /* Elemento de bloque */
+  margin: 0 auto 15px auto; /* Centrada con espacio abajo */
+}
+
+/* Información dentro de cada tarjeta de perro */
+.perros-container figcaption h3 {
+  margin: 8px 0; /* Espacio entre líneas */
+  font-size: 16px; /* Tamaño estándar */
+  color: #333; /* Color gris oscuro */
+}
